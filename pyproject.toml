@@ -1,0 +1,9 @@
+[project]
+name = "cpythonclassesframeworkscomp"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.10.9",
+    "msgspec>=0.21.1",
+    "pydantic>=2.13.3",
+]

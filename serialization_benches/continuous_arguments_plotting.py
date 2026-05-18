@@ -43,10 +43,10 @@ for module in df["m_name"].unique():
         markersize=3,
         color=colors[module],
     )
-ax1.set_xlabel("Number of Arguments", fontsize=12)
+ax1.set_xlabel("Number of Atributes", fontsize=12)
 ax1.set_ylabel("Memory Usage (MB)", fontsize=12)
 ax1.set_title(
-    "Memory Consumption by Number of Arguments", fontsize=14, fontweight="bold"
+    "Memory Consumption by Number of Atributes", fontsize=14, fontweight="bold"
 )
 ax1.legend(loc="upper left")
 ax1.grid(True, alpha=0.3)
@@ -67,10 +67,10 @@ for module in df["m_name"].unique():
         markersize=3,
         color=colors[module],
     )
-ax2.set_xlabel("Number of Arguments", fontsize=12)
+ax2.set_xlabel("Number of Atributes", fontsize=12)
 ax2.set_ylabel("Creation Time (seconds)", fontsize=12)
 ax2.set_title(
-    "Object Creation Time by Number of Arguments", fontsize=14, fontweight="bold"
+    "Object Creation Time by Number of Atributes", fontsize=14, fontweight="bold"
 )
 ax2.legend(loc="upper left")
 ax2.grid(True, alpha=0.3)
@@ -91,10 +91,10 @@ for module in df["m_name"].unique():
         markersize=3,
         color=colors[module],
     )
-ax3.set_xlabel("Number of Arguments", fontsize=12)
+ax3.set_xlabel("Number of Atributes", fontsize=12)
 ax3.set_ylabel("Serialization Time (seconds)", fontsize=12)
 ax3.set_title(
-    "Serialization Time by Number of Arguments", fontsize=14, fontweight="bold"
+    "Serialization Time by Number of Atributes", fontsize=14, fontweight="bold"
 )
 ax3.legend(loc="upper left")
 ax3.grid(True, alpha=0.3)
@@ -140,7 +140,7 @@ for idx, n_args in enumerate(argument_counts):
 
         ax.set_xlabel("Module")
         ax.set_ylabel("Time (seconds)")
-        ax.set_title(f"{n_args} Arguments")
+        ax.set_title(f"{n_args} Atributes")
         ax.set_xticks(x_pos + 0.15)
         ax.set_xticklabels(subset["m_name"])
         ax.legend()
@@ -216,7 +216,7 @@ for module in df["m_name"].unique():
         color=colors[module],
     )
 
-axes4[0].set_xlabel("Number of Arguments")
+axes4[0].set_xlabel("Number of Atributes")
 axes4[0].set_ylabel("Time per Argument (seconds)")
 axes4[0].set_title("Creation Time Efficiency")
 axes4[0].legend()
@@ -224,7 +224,7 @@ axes4[0].grid(True, alpha=0.3)
 axes4[0].set_xscale("log")
 axes4[0].set_yscale("log")
 
-axes4[1].set_xlabel("Number of Arguments")
+axes4[1].set_xlabel("Number of Atributes")
 axes4[1].set_ylabel("Time per Argument (seconds)")
 axes4[1].set_title("Serialization Time Efficiency")
 axes4[1].legend()

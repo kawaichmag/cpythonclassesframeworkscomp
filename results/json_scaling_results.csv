@@ -1,0 +1,13 @@
+type,n_objects,serialization_time,deserialization_time,size_mb,mem_mb
+integers,1000,0.0001,0.0001,0.0,0.04
+strings_medium,1000,0.0004,0.0003,0.1,0.41
+complex_objects,1000,0.0032,0.0025,0.35,1.77
+integers,10000,0.0004,0.0004,0.06,0.46
+strings_medium,10000,0.0024,0.0023,1.01,2.87
+complex_objects,10000,0.0357,0.0326,3.6,20.77
+integers,50000,0.0017,0.0024,0.32,3.16
+strings_medium,50000,0.0127,0.0112,5.07,8.13
+complex_objects,50000,0.175,0.1822,18.32,193.18
+integers,100000,0.003,0.0044,0.66,6.8
+strings_medium,100000,0.0251,0.0235,10.11,21.77
+complex_objects,100000,0.3408,0.3575,36.77,401.59

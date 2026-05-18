@@ -1,0 +1,5 @@
+format,n_objects,serialization_time,deserialization_time,serialized_size_mb,mem_usage_mb,speed_mb_per_sec
+msgpack,1000000,0.1932,0.5755,118.46,132.69,613.32
+json,1000000,2.1825,1.7303,178.11,185.84,81.61
+json_compact,1000000,2.1613,1.7417,159.04,161.23,73.58
+pickle,1000000,1.4374,0.7531,79.5,81.96,55.31

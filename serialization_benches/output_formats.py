@@ -272,7 +272,7 @@ def benchmark_formats():
         "json": JSONSerializer(),
         "json_compact": JSONCompactSerializer(),
         "pickle": PickleSerializer(),
-        # 'xml': XMLSerializer(),  # Too slow for 1M objects, uncomment for smaller tests
+        "xml": XMLSerializer(),  # Too slow for 1M objects, uncomment for smaller tests
         # 'compact_binary': CompactBinarySerializer(),  # Custom format
     }
 
